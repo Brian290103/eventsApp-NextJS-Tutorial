@@ -1,10 +1,30 @@
-.main {
+.header nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-weight: bold;
+}
+.header nav a:hover {
+  transition: 0.5s ease;
+  font-weight: lighter;
+}
+
+.main1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  /* min-height: calc(100vh - 120px); */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
 
 .description {
@@ -97,7 +117,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
